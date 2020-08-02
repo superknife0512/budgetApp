@@ -1,0 +1,36 @@
+@import './sass/summary';
+@import './sass/category';
+@import './sass/budget';
+@import './sass/backdrop';
+
+.bg{
+    height: 100%;
+    width: 100vw;
+    background-color:   #89e1f1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+}
+
+#app {
+    background-color: #fff;
+    width: 950px;
+    border-radius: .3rem;
+    box-shadow: 4px 5px 30px 0px rgba(0,0,0,0.44);
+    overflow: hidden;
+}
+
+.anim-btn {
+    padding: .1rem .4rem;
+    background-color: white;
+    text-transform: capitalize;
+    cursor: pointer;
+    border-radius: 200px;
+    border: 1px solid rgb(97, 166, 206);
+    color: #7cc1d6;
+    &:hover {
+        color: white;
+        background-color: #7cc1d6;
+    }
+}

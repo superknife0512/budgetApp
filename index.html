@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget App</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="./stylesheets/main.css">
+</head>
+<body>
+    <div class="bg">
+        <div id="app">
+            <div class="summary">
+                <h2>total budget</h2>
+                <p> $3000 </p>
+            </div>
+            <div class="category">
+                <div>
+                    <h3>Category</h3>
+                    <div class="d-flex">
+                        <p id="prev" class="mr-2 anim-btn">previous</p>
+                        <p class="anim-btn" id="next">next</p>
+                    </div>
+                </div>
+                <div class="category__list">
+                    <div class="category__card">
+                        <div class="category__img">
+                            <img src="./images/salary.png" alt="salary">
+                        </div>
+                        <h5>Salary</h5>
+                    </div>
+                    <div class="category__card">
+                        <div class="category__img">
+                            <img src="./images/gift.png" alt="gift">
+                        </div>
+                        <h5>gift</h5>
+                    </div>
+                    <div class="category__card">
+                        <div class="category__img">
+                            <img src="./images/friend.png" alt="friend">
+                        </div>
+                        <h5>friend</h5>
+                    </div>
+                    <div class="category__card">
+                        <div class="category__img">
+                            <img src="./images/shopping.png" alt="shopping">
+                        </div>
+                        <h5>shopping</h5>
+                    </div>
+                    <div class="category__card">
+                        <div class="category__img">
+                            <img src="./images/cooking.png" alt="cooking">
+                        </div>
+                        <h5>cooking</h5>
+                    </div>
+                    <div class="category__card">
+                        <div class="category__img">
+                            <img src="./images/invoice.png" alt="invoice">
+                        </div>
+                        <h5>invoice</h5>
+                    </div>
+                    <div class="category__card">
+                        <div class="category__img">
+                            <img src="./images/other.png" alt="other">
+                        </div>
+                        <h5>other</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="budget">
+                <div class="budget__income">
+                    <h3 class="mb-4">Income</h3>
+                    <div class="budget__card">
+                        <img class="border-income" src="./images/salary.png" alt="img">
+                        <div class="budget__card-content">
+                            <h4>Salary income</h4>
+                            <h5> $2500</h5>
+                            <p>Updated at: 23/03/2019 </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="budget__cost">
+                    <h3 class="mb-4">Cost</h3>
+                    <div class="budget__card">
+                        <img class="border-cost" src="./images/cooking.png" alt="img">
+                        <div class="budget__card-content">
+                            <h4>Cooking Cost</h4>
+                            <h5> -$500</h5>
+                            <p>Updated at: 23/03/2019 </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- input popup -->
+    <div class="backdrop isDisplay">
+        <div class="popup">
+            <h4>Create new: Salary</h4>
+            <hr>
+            <form action="#" class="popup__form">
+                <div class="form-inline mb-4">
+                    <input type="text" class="form-control mr-2" id="amount" placeholder="amount">
+                    <input type="text" class="form-control mr-2" id="title" placeholder="title">
+                    <!-- <input type="text" class="form-control" id="description" placeholder="description"> -->
+                </div>
+                <div class="form-group">
+                    <textarea type="text" class="form-control" placeholder="Desciption" rows="4"></textarea>
+                </div>
+                <h5> Choose type: </h5>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="type" value="income" checked>
+                    <label class="form-check-label" for="income">
+                        Is this your income?
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="type" value="cost">
+                    <label class="form-check-label" for="type">
+                        Is this your cost?
+                    </label>
+                </div>
+                <div class="d-flex mt-4 justify-content-end">
+                    <button class="btn btn-secondary mr-2">Cancel</button>
+                    <button class="btn btn-success">Create one</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Card popup -->
+    <div class="backdrop isDisplay">
+        <div class="popup card card--income">
+            <div class="card__heading">
+                <div class="card__amount">
+                    <h5> $1200 </h5>
+                </div>
+                <div class="card__info">
+                    <h4>Salary Income</h4>
+                </div>
+            </div>
+            <hr>
+            <div class="card__list">
+                <div class="card__history">
+                    <img src="./images/calendar.png" alt="calendar">
+                    <div class="card__history-content">
+                        <h5>History title: <span style="color: rgb(245, 4, 145)"> $230 </span></h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque placeat iste asperiores debitis dolorum esse autem ipsa iusto sequi aut doloribus quisquam cum vel pariatur repudiandae, nulla neque? Voluptates, quis!</p>
+                        <i>Create at: 14/03/2020</i>
+                    </div>
+                </div>
+                <div class="card__history">
+                    <img src="./images/calendar.png" alt="calendar">
+                    <div class="card__history-content">
+                        <h5>History title: <span style="color: rgb(245, 4, 145)"> $230 </span></h5>
+                        <p>Adipisicing elit. Itaque placeat iste asperiores debitis dolorum esse autem ipsa iusto sequi aut doloribus quisquam cum vel pariatur repudiandae, nulla neque? Voluptates, quis!</p>
+                        <i>Create at: 14/03/2020</i>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-end">
+                    <button class="btn btn-info">Close!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+    <script src="js/animation.js"></script>
+    <!-- <a href='https://www.freepik.com/vectors/background'>Background vector created by pikisuperstar - www.freepik.com</a> -->
+</body>
+</html>

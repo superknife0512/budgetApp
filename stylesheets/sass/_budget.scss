@@ -1,0 +1,52 @@
+$income-color: #00a396;
+$cost-color: #ad0065;
+.budget {
+    display: flex;
+    padding: 3.5rem;
+    &__income {
+        margin-right: 3.8rem;
+        h3 {
+            color: $income-color
+        }
+        
+
+        h4 {
+            color: $income-color;
+            text-transform: capitalize;
+        }
+    }
+
+    &__cost {
+        h3 {
+            color: $cost-color
+        }
+        h4 {
+            color: $cost-color;
+            text-transform: capitalize;
+        }
+    }
+    &__card{
+        display: flex;
+        margin-bottom: 2rem;
+        img {
+            padding: 1.5rem;
+            height: 8rem;
+            margin-right: 1.5rem;
+            border-radius: .7rem;
+        }
+        p {
+            font-size: 1rem;
+            margin-bottom: .5rem !important;
+        }
+
+        cursor: pointer;
+    }
+    
+}
+
+.border-income {
+    border: 4px solid rgb(164, 245, 234);
+}
+.border-cost {
+    border: 4px solid rgb(255, 193, 231);
+}

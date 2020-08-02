@@ -1,0 +1,59 @@
+.category {
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    background-color: rgb(231, 245, 243);
+    color: #444;
+    &__list{        
+        display: flex;
+        align-items: center;
+        overflow: hidden;        
+    }
+    &__card {
+        text-align: center;
+        &:not(:last-child) {
+            margin-right: 3rem;
+        }
+        &:first-child {
+            margin-left: 1rem;
+        }
+        cursor: pointer;
+        margin-top: 1rem;
+        h5 {
+            text-transform: uppercase;
+        }
+        cursor: pointer;
+        transition: all .5s;
+    }
+    
+    &__img {
+        height: 5.8rem;
+        width: 5.8rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 5px solid #cf99ee;
+        border-radius: 50%;
+        margin-bottom: 0.3rem;
+        transition: all .2s;
+
+        &:hover {
+            border: 5px solid #f185e3;
+            transform: scale(1.1);
+        }
+
+        img {
+            height: 2.5rem;
+        }
+    }
+
+    &__forward {
+        transform: translateX(-25rem);
+    }
+
+    h3 {
+        margin-right: 3rem;
+        font-size: 31px;
+    }
+    
+}
