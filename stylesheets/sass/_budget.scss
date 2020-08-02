@@ -4,7 +4,8 @@ $cost-color: #ad0065;
     display: flex;
     padding: 3.5rem;
     &__income {
-        margin-right: 3.8rem;
+        margin-right: 4.5rem;
+        min-width: 22rem;
         h3 {
             color: $income-color
         }

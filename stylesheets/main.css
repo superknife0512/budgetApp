@@ -123,7 +123,8 @@
 }
 
 .budget__income {
-  margin-right: 3.8rem;
+  margin-right: 4.5rem;
+  min-width: 22rem;
 }
 
 .budget__income h3 {
@@ -197,7 +198,7 @@
 }
 
 .isDisplay {
-  display: none;
+  display: none !important;
 }
 
 .card {
@@ -264,6 +265,7 @@
 
 .bg {
   height: 100%;
+  min-height: 100vh;
   width: 100vw;
   background-color: #89e1f1;
   display: -webkit-box;
